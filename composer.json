@@ -1,0 +1,16 @@
+{
+    "name": "murph/solid-aberto-fechado",
+    "description": "Projeto ETL para mostragem do principio aberto/fechado do Solid",
+    "autoload": {
+        "psr-4": {
+            "Murph\\SolidAbertoFechado\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diana Dias",
+            "email": "dianadmurphy@gmail.com"
+        }
+    ],
+    "require": {}
+}
