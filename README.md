@@ -1,5 +1,5 @@
 # Usando principio open/close "aberto/fechado" do conceito Solid
-Case para um projeto ETL leitura de arquivos de variadas extensões utilizando metodologia SOLID com PHP puro via autoloader do Composer.
+Case para um projeto ETL(extract transform load) com leitura de arquivos de variadas extensões que podem alimentar um DB ou uma aplicação final. Utilizando metodologia SOLID com PHP puro via autoloader do Composer.
 Somente para fins de estudos e amostragem de boas práticas começanddo com uma abstração basica no decorrer aplicando o principio SOLID de open/close.
 
 ## Conceitos SOLID
