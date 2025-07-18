@@ -10,6 +10,7 @@ class Leitor
 {
     private $arquivo;
     private $diretorio;
+    private $class;
     private array $result = [];
 
     public function getDiretorio()
@@ -39,8 +40,8 @@ class Leitor
         $class = "Murph\SolidAbertoFechado\\extrator\\".$class;
 
         if(!empty($class)){
-            $csv = new $class();
-            $result = $csv->$metodo($caminho);
+            $tipo = new $class();
+            $result = $tipo->$metodo($caminho);
             $this->result = $result;
         }
 
