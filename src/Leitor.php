@@ -1,10 +1,8 @@
 <?php
 namespace Murph\SolidAbertoFechado;
 
-use Murph\SolidAbertoFechado\extrator\Csv;
+use Murph\SolidAbertoFechado\extrator AS extrator;
 use Murph\SolidAbertoFechado\extrator\Txt;
-
-use function PHPSTORM_META\type;
 
 class Leitor
 {
@@ -33,10 +31,12 @@ class Leitor
         return $this->arquivo;
     }
 
-    public function lerArquivo(string $class): array
+    public function lerArquivo(): array
     {
         $caminho = $this->getDiretorio() ."/". $this->getArquivo();
-        $metodo = "lerArquivo". $class;
+        $class = explode(".", $this->getArquivo());
+        $metodo = "lerArquivo". $class[1];
+        $class = ucfirst($class[1]);
         $class = "Murph\SolidAbertoFechado\\extrator\\".$class;
 
         if(!empty($class)){
